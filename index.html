@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sampada S Gowda | GenAI &amp; Software Engineer</title>
+  <meta name="description" content="Portfolio of Sampada S Gowda: Generative AI, Java Spring Boot and Python developer.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="#home" class="logo">SG</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#expertise">GenAI</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme" aria-label="Toggle theme">◐</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Sampada S Gowda</h1>
+        <h2>GenAI &amp; Software Engineer</h2>
+        <p class="lead">I apply Generative AI to modernize legacy systems and improve development workflows. Java, Spring Boot, Python and LangChain are my daily tools.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Get in Touch</a>
+        </div>
+      </div>
+      <div class="avatar">
+        <img src="photo.jpg" alt="Sampada S Gowda" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'SG'}))">
+      </div>
+    </section>
+
+    <section id="about">
+      <h3 class="title">About Me</h3>
+      <p>I have nearly 1.5 years of experience in IT, working on applying Generative AI to build solutions that improve development workflows and overall business efficiency. I hold a B.E. in Computer Science and Engineering from Malnad College of Engineering, Hassan, Karnataka (2019–2023, CGPA 8.67).</p>
+      <div class="stats">
+        <div><b>~1.5 yrs</b><span>Industry experience</span></div>
+        <div><b>3</b><span>Certifications (IBM, NPTEL)</span></div>
+        <div><b>8.67</b><span>CGPA, B.E. CSE</span></div>
+      </div>
+    </section>
+
+    <section id="expertise">
+      <h3 class="title">GenAI Expertise</h3>
+      <div class="grid">
+        <article class="card"><h4>Legacy Modernization</h4><p>Hands-on AI-driven modernization PoCs, such as JSP/Angular to React migrations, with documentation and validation.</p></article>
+        <article class="card"><h4>Application Migration</h4><p>Worked on migrating legacy applications (VB .NET to Java Spring Boot and Angular) using GenAI, significantly reducing manual effort.</p></article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h3 class="title">Projects</h3>
+      <div class="grid">
+        <article class="card">
+          <span class="tag">Machine Learning</span>
+          <h4>Sign Language Recognition System</h4>
+          <p>Real-time recognition of alphanumeric sign language gestures using CNNs and Transformers, improving accessibility for users with hearing disabilities.</p>
+          <p class="stack">Python · TensorFlow · MediaPipe · CNN · Transformers</p>
+        </article>
+        <article class="card">
+          <span class="tag">IoT · Published in IJSREM, July 2023</span>
+          <h4>Infection Control Robot</h4>
+          <p>IoT-based robot with real-time temperature and mask detection. Sensor data was analyzed to improve system accuracy.</p>
+          <p class="stack">Arduino · Sensors · C++</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h3 class="title">Skills</h3>
+      <div class="chips">
+        <span>Java</span><span>Python</span><span>C</span><span>Spring Boot</span><span>REST API</span>
+        <span>SQL</span><span>HTML</span><span>CSS</span><span>Generative AI</span><span>Prompt Engineering</span>
+        <span>LangChain</span><span>Agentic AI</span><span>Git</span><span>VS Code</span><span>Jupyter Notebook</span>
+      </div>
+      <h3 class="title sub">Certifications</h3>
+      <ul class="list">
+        <li>API Connect Certification, IBM</li>
+        <li>Cloud Pak for Integration Certification, IBM</li>
+        <li>NPTEL Elite Certification in Cloud Computing, IIT Kharagpur (2023)</li>
+      </ul>
+      <h3 class="title sub">Interests</h3>
+      <p>Crocheting · Listening to Music</p>
+    </section>
+
+    <section id="contact">
+      <h3 class="title">Contact</h3>
+      <p>Based in Hassan, Karnataka. Open to conversations about GenAI and software engineering.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:sampadagowda18@gmail.com">sampadagowda18@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Sampada S Gowda</footer>
+  <button id="chat-fab" aria-label="Chat with Sampada's AI">💬 Chat with my AI</button>
+  <div id="chat-panel" hidden>
+    <div class="chat-head"><b>Sampada's AI Assistant</b><button id="chat-close" aria-label="Close chat">✕</button></div>
+    <div id="chat-log"></div>
+    <div class="chips-q">
+      <button type="button">What does she do?</button>
+      <button type="button">Tell me about her projects</button>
+      <button type="button">What are her skills?</button>
+      <button type="button">How can I contact her?</button>
+    </div>
+    <form id="chat-form">
+      <input id="chat-input" type="text" maxlength="500" placeholder="Ask about Sampada…" autocomplete="off">
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+  <script src="chat.js"></script>
+</body>
+</html>

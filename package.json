@@ -1,0 +1,13 @@
+{
+  "name": "sampada-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "index": "node --env-file=.env.local scripts/build_index.mjs",
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0"
+  }
+}
